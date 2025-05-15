@@ -8,7 +8,7 @@ import DiscountForm from "../../modules/DiscountForm/DiscountForm";
 const HomePage = () => {
     return (
         <>
-            <Promo title='Amazing Discounts on Pets Products!' backgroundImage='/public/images/promo.webp' to='/all-sales' buttonText='Check out' />
+            <Promo title='Amazing Discounts on Pets Products!' backgroundImage='/images/promo.webp' to='/all-sales' buttonText='Check out' />
             <SectionLayout title="Categories" headerNavigation={{ to: '/categories', label: 'All categories' }}>
                 <CategoriesList limit={4} />
             </SectionLayout>
