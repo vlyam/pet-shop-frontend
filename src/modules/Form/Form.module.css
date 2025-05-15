@@ -1,0 +1,26 @@
+/*FORM*/
+.form {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.form__textfields {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media (max-width: 1440px) {
+    .form {
+        gap: 28px;
+    }
+
+    .form__textfields {
+        gap: 14px;
+    }
+}
+
+/*END FORM*/

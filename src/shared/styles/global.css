@@ -1,0 +1,15 @@
+.fh .fh__item-link {
+    font-size: var(--standart-size-sm);
+}
+
+.fh .fh__cart {
+    width: 30px;
+    height: 33px;
+}
+
+.fh .fh__cart-number {
+    min-width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    font-size: 10px;
+}

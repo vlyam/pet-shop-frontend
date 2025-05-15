@@ -1,0 +1,27 @@
+/*CART-HAS-ITEMS*/
+.cart__has-items {
+    display: flex;
+    gap: 32px;
+    align-items: start;
+}
+
+@media (max-width: 1440px) {
+    .cart__has-items {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .cart__has-items {
+        gap: 28px;
+    }
+}
+
+@media (max-width: 992px) {
+    .cart__has-items {
+        gap: 26px;
+        flex-direction: column;
+        align-items: unset;
+    }
+}
+/*END CART-HAS-ITEMS*/

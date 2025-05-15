@@ -1,0 +1,81 @@
+/*DISCOUNT-FORM*/
+.discount-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 32px 0px;
+    margin-top: 26px;
+    background: linear-gradient(261.47deg, #2451C6 32.63%, #0D50FF 98.96%);
+    border-radius: 12px;
+    align-items: center;
+}
+
+.discount-form__content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    padding: 0px;
+    gap: 32px;
+}
+
+.discount-form__illustration {
+    flex: 1 1 auto;
+    max-width: 748px;
+    aspect-ratio: 748 / 360;
+}
+
+.discount-form__illustration img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    transition: all 300ms ease;
+}
+
+.discount-form__form {
+    width: 516px;
+    padding-bottom: 32px;
+}
+
+@media (max-width: 1280px) {
+    .discount-form__form {
+        width: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .discount-form__content {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .discount-form__illustration {
+        order: 2;
+    }
+
+    .discount-form__form {
+        order: 1;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .discount-form {
+        gap: 20px;
+        padding: 30px 20px 0px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .discount-form {
+        gap: 15px;
+        padding: 30px 15px 0px;
+    }
+}
+
+/*END DISCOUNT-FORM*/

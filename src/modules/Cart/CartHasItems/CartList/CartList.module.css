@@ -1,0 +1,29 @@
+/*CART__LIST*/
+.cart__list {
+    width: 780px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media (max-width: 1440px) {
+    .cart__list {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .cart__list {
+        width: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .cart__list {
+        width: 100%;
+        gap: 12px;
+    }
+}
+
+/*END CART__LIST*/

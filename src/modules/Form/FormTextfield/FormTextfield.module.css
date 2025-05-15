@@ -1,0 +1,95 @@
+/*FORM__TEXTFIELD*/
+.form__textfield {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form__textfield input,
+.form__textfield.form__textfield--color-theme-dark input {
+    width: 100%;
+    padding: 16px 32px;
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid #DDDDDD;
+    background-color: #FFF;
+    color: var(--secondary-color);
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    outline: none;
+}
+
+.form__textfield.form__textfield--color-theme-light input {
+    color: #FFF;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+}
+
+.form__textfield input[disabled] {
+    opacity: 0.5;
+}
+
+.form__textfield input::placeholder,
+.form__textfield.form__textfield--color-theme-dark input::placeholder {
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.form__textfield.form__textfield--color-theme-light input::placeholder {
+    color: #FFF;
+}
+
+@media (max-width: 1440px) {
+
+    .form__textfield input,
+    .form__textfield.form__textfield--color-theme-dark input,
+    .form__textfield.form__textfield--color-theme-light input {
+        padding: 16px 30px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    .form__textfield input,
+    .form__textfield.form__textfield--color-theme-dark input,
+    .form__textfield.form__textfield--color-theme-light input {
+        padding: 14px 28px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .form__textfield input,
+    .form__textfield.form__textfield--color-theme-dark input,
+    .form__textfield.form__textfield--color-theme-light input {
+        padding: 12px 22px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .form__textfield input,
+    .form__textfield.form__textfield--color-theme-dark input,
+    .form__textfield.form__textfield--color-theme-light input {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .form__textfield input,
+    .form__textfield.form__textfield--color-theme-dark input,
+    .form__textfield.form__textfield--color-theme-light input {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+}
+
+/*END FORM__TEXTFIELD*/

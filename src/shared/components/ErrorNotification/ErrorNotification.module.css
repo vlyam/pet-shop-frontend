@@ -1,0 +1,68 @@
+/*ERROR-NOTIFICATION*/
+.error-notification {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    background: #fdf1f1;
+    color: #a80000;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.error-notification::before {
+    content: ':-(';
+    width: 70px;
+    height: 70px;
+    background: #ffe3e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+@media (max-width: 1280px) {
+    .error-notification {
+        height: 300px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .error-notification {
+        height: 200px;
+        font-size: 14px;
+    }
+
+    .error-notification::before {
+        content: ':-(';
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .error-notification {
+        height: 150px;
+    }
+
+    .error-notification::before {
+        content: ':-(';
+        width: 50px;
+        height: 50px;
+        font-size: 15px;
+    }
+}
+
+/*END ERROR-NOTIFICATION*/

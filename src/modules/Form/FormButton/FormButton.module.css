@@ -1,0 +1,142 @@
+/*FORM__BUTTON*/
+.form__button,
+.form__button.form__button--color-theme-dark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding: 16px 56px;
+    border-radius: 6px;
+    font-size: var(--standart-size);
+    font-weight: 600;
+    line-height: 120%;
+    color: #FFF;
+    background-color: var(--main-color);
+    position: relative;
+    transition: all 400ms ease;
+    cursor: pointer;
+}
+
+.form__button.form__button--color-theme-light {
+    color: var(--secondary-color);
+    background-color: #FFFFFF;
+}
+
+.form__button:hover {
+    color: #FFF;
+    background-color: var(--secondary-color);
+}
+
+.form__button[disabled] {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.form__button.form__button--submitted,
+.form__button[disabled].form__button--submitted,
+.form__button.form__button--submitted.form__button--color-theme-dark,
+.form__button[disabled].form__button--submitted.form__button--color-theme-dark {
+    background-color: #F1F3F4;
+    color: var(--main-color);
+    opacity: 1;
+}
+
+.form__button.form__button--submitted.form__button--color-theme-light,
+.form__button[disabled].form__button--color-theme-light {
+    background-color: #f1f3f436;
+    color: #c3c3c3;
+    opacity: 1;
+}
+
+.form__button.form__button--loading,
+.form__button.form__button--color-theme-dark.form__button--loading {
+    color: #b8cbff;
+    pointer-events: none;
+}
+
+.form__button.form__button--loading::after,
+.form__button.form__button--color-theme-dark.form__button--loading::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 4px solid #4070ef;
+    border-top-color: #b8cbff;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+}
+
+.form__button.form__button--color-theme-light.form__button--loading {
+    color: #DDDDDD;
+}
+
+.form__button.form__button--color-theme-light.form__button--loading::after {
+    border: 4px solid #DDDDDD;
+    border-top-color: #1251f5;
+}
+
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@media (max-width: 1440px) {
+
+    .form__button,
+    .form__button.form__button--color-theme-dark,
+    .form__button.form__button--color-theme-light {
+        padding: 16px 56px;
+        font-size: var(--standart-size-lg);
+    }
+}
+
+@media (max-width: 1280px) {
+
+    .form__button,
+    .form__button.form__button--color-theme-dark,
+    .form__button.form__button--color-theme-light {
+        padding: 14px 46px;
+        font-size: var(--standart-size-md);
+    }
+}
+
+@media (max-width: 992px) {
+
+    .form__button,
+    .form__button.form__button--color-theme-dark,
+    .form__button.form__button--color-theme-light {
+        padding: 12px 36px;
+        font-size: var(--standart-size-sm);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .form__button,
+    .form__button.form__button--color-theme-dark,
+    .form__button.form__button--color-theme-light {
+        padding: 10px 28px;
+        font-size: var(--standart-size-xs);
+    }
+}
+
+@media (max-width: 400px) {
+
+    .form__button,
+    .form__button.form__button--color-theme-dark,
+    .form__button.form__button--color-theme-light {
+        padding: 8px 24px;
+        font-size: var(--standart-size-mob);
+    }
+}
+
+/*END FORM__BUTTON*/

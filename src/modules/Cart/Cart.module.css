@@ -1,0 +1,7 @@
+/*CART*/
+.cart {
+    display: flex;
+    flex-direction: column;
+}
+
+/*END CART*/

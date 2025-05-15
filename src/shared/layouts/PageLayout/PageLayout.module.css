@@ -1,0 +1,144 @@
+/*PAGE*/
+.page {
+    padding-top: 40px;
+}
+
+.page__container {
+    max-width: 1440px;
+    padding: 0 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.page__breadcrumbs {
+    flex-shrink: 0;
+    overflow: auto;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+}
+
+.page__breadcrumbs::-webkit-scrollbar {
+    height: 5px;
+}
+
+.page__breadcrumbs::-webkit-scrollbar-thumb {
+    background: #797979;
+    border-radius: 50px;
+}
+
+.page__breadcrumbs::-webkit-scrollbar-track {
+    background: #FFF;
+}
+
+.page__header {
+    display: flex;
+    gap: 32px;
+}
+
+.page__header-navigation {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.page__header-navigation::before {
+    content: '';
+    display: block;
+    flex: 1 1 auto;
+    height: 1px;
+    background-color: #DDDDDD;
+}
+
+.page__filters {
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    overflow: auto;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+}
+
+.page__filters::-webkit-scrollbar {
+    height: 5px;
+}
+
+.page__filters::-webkit-scrollbar-thumb {
+    background: #797979;
+    border-radius: 50px;
+}
+
+.page__filters::-webkit-scrollbar-track {
+    background: #FFF;
+}
+
+.page__main {
+    flex-shrink: 0;
+}
+
+@media (max-width: 1440px) {
+    .page__container {
+        gap: 35px;
+    }
+
+    .page__filters {
+        gap: 35px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .page__container {
+        padding: 0 30px;
+        gap: 30px;
+    }
+
+    .page__filters {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .page__container {
+        padding: 0 25px;
+        gap: 25px;
+    }
+
+    .page__filters {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page__container {
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    .page__filters {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .page__header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: start;
+    }
+
+    .page__header-navigation {
+        margin-top: unset;
+    }
+
+    .page__filters {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+/*END PAGE*/

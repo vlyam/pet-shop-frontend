@@ -1,0 +1,12 @@
+/*FORM__ERROR-TEXT*/
+.form__error-text,
+.form__error-text.form__error-text--color-theme-dark {
+    color: #be0000;
+    font-size: 13px;
+}
+
+.form__error-text.form__error-text--color-theme-light {
+    color: #ffb7a0;
+}
+
+/*END FORM__ERROR-TEXT*/

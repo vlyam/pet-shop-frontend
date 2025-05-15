@@ -1,0 +1,25 @@
+:root {
+    --main-color: #0D50FF;
+    --secondary-color: #282828;
+
+    --title-size: 64px;
+    --title-size-lg: 60px;
+    --title-size-md: 56px;
+    --title-size-sm: 46px;
+    --title-size-xs: 34px;
+    --title-size-mob: 30px;
+
+    --subtitle-size: 40px;
+    --subtitle-size-lg: 36px;
+    --subtitle-size-md: 32px;
+    --subtitle-size-sm: 28px;
+    --subtitle-size-xs: 26px;
+    --subtitle-size-mob: 20px;
+
+    --standart-size: 20px;
+    --standart-size-lg: 19px;
+    --standart-size-md: 18px;
+    --standart-size-sm: 17px;
+    --standart-size-xs: 16px;
+    --standart-size-mob: 15px;
+}

@@ -1,0 +1,172 @@
+/*HEADER*/
+.header {
+    height: 128px;
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.header__container {
+    max-width: 1440px;
+    padding: 0 40px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.header__logo {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 70 70'%3E%3Cpath fill='%230D50FF' fill-rule='evenodd' d='M70 35C70 15.67 54.33 0 35 0S0 15.67 0 35s15.67 35 35 35 35-15.67 35-35ZM33.917 19h3.166c.05-.012.1-.022.151-.03l12.334-1.993a2.049 2.049 0 0 1 2.288 1.453l4.02 13.87c.028.08.053.16.072.243.083.358.115.732.096 1.104-.019.38-.088.75-.207 1.097a4.02 4.02 0 0 1-.511 1c-.215.307-.47.583-.757.815h-.001a4.135 4.135 0 0 1-2.89.93c-.755 4.903-1.97 8.694-3.644 11.373-2.117 3.388-4.925 5.083-8.423 5.083h-8.222c-6.353 0-10.375-5.486-12.067-16.455h-.006a4.113 4.113 0 0 1-2.88-.928l-.005.006a4.03 4.03 0 0 1-.757-.824 4.044 4.044 0 0 1-.512-.992 4.046 4.046 0 0 1-.207-1.105 4.005 4.005 0 0 1 .097-1.104c.019-.083.043-.164.071-.242l4.02-13.87a2.048 2.048 0 0 1 2.29-1.454l12.332 1.993c.051.008.102.018.152.03Zm2.809 4.111h-2.453L23.13 35.06c.009.046.016.091.021.137 1.22 9.758 3.966 14.638 8.239 14.638h2.055v-2.056c0-.116.01-.23.029-.341-1.39-.562-2.084-1.819-2.084-3.77 0-1.135.92-2.056 2.055-2.056h4.111c1.135 0 2.056.92 2.056 2.056 0 1.069 0 1.871-.675 2.77-.353.472-.8.82-1.402 1.043.014.097.022.196.022.298v2.056h2.055c1.984 0 3.63-1.048 4.938-3.14 1.553-2.483 2.653-6.317 3.3-11.498.006-.046.013-.091.022-.136L36.726 23.111ZM29.333 33.39a2.056 2.056 0 0 1 4.111 0v.02a2.056 2.056 0 0 1-4.111 0v-.02Zm8.222 0a2.056 2.056 0 0 1 4.112 0v.02a2.056 2.056 0 0 1-4.112 0v-.02Zm-8.23-10.986-6.752-1.091-3.5 12.077.001.002.007-.003.039-.044 10.205-10.94Zm19.102-1.091-6.752 1.091L51.88 33.345l.043.048h.004l-3.5-12.08Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    transition: all 300ms;
+}
+
+.header__logo:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.header__hamburger {
+    width: 25px;
+    height: 25px;
+    display: none;
+}
+
+.header__hamburger-panel {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    max-width: calc(100% - 50px);
+    transition: all 400ms ease;
+}
+
+.header__hamburger-panel.header__hamburger-panel--show {
+    left: 0;
+    box-shadow: 5px 0px 15px 0px rgba(0, 0, 0, 0.25);
+    z-index: 998;
+    display: none;
+}
+
+.header__hamburger-panel.header__hamburger-panel--show::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    backdrop-filter: blur(7px);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.fixed-header {
+    width: 100%;
+    position: fixed;
+    top: -75px;
+    z-index: 9;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+    transition: top 0.4s ease-in-out;
+}
+
+.fixed-header .header__logo {
+    width: 40px;
+    height: 40px;
+}
+
+.fixed-header.fixed-header--visible {
+    top: 0px;
+}
+
+@media (max-width: 1440px) {
+    .header {
+        height: 110px;
+    }
+
+    .header__logo {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .header {
+        height: 100px;
+    }
+
+    .header__container {
+        padding: 0 30px;
+    }
+
+    .header__logo {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        height: 80px;
+    }
+
+    .header__container {
+        padding: 0 25px;
+    }
+
+    .header__logo {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 60px;
+    }
+
+    .header__container {
+        padding: 0 15px;
+    }
+
+    .header__logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .header__hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__hamburger-panel.header__hamburger-panel--show {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        height: 50px;
+    }
+
+    .header__logo {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/*END HEADER*/

@@ -1,0 +1,88 @@
+/*HAMBURGER-PANEL*/
+.hamburger-panel {
+    background-color: #FFF;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+.hamburger-panel .hamburger-panel__lines {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hamburger-panel .hamburger-panel__lines .hamburger-panel__line {
+    padding: 0;
+    width: 100%;
+}
+
+.hamburger-panel .hamburger-panel__lines .hamburger-panel__line:nth-child(1) {
+    flex: 1 1 auto;
+    overflow: auto;
+}
+
+.hamburger-panel .hamburger-panel__lines .hamburger-panel__line:nth-child(2) {
+    padding: 35px 25px;
+    flex-shrink: 0;
+    background-color: #F1F3F4;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hamburger-panel__contact {
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: var(--subtitle-size-mob);
+}
+
+.hamburger-panel__social-list {
+    display: flex;
+    gap: 20px;
+}
+
+.hamburger-panel__social-li {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.hamburger-panel__social-button svg {
+    width: 100%;
+    fill: var(--secondary-color);
+    transition: all 300ms;
+}
+
+.hamburger-panel__link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--subtitle-size-mob);
+    color: var(--secondary-color);
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.hamburger-panel__close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: -33px;
+    z-index: 9;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 25 25'%3E%3Cpath fill='%23fff' d='M24.26 4.27a2.503 2.503 0 0 0 0-3.538 2.503 2.503 0 0 0-3.537 0L12.5 8.962 4.27.74a2.503 2.503 0 0 0-3.538 0 2.503 2.503 0 0 0 0 3.537l8.23 8.223L.74 20.73a2.503 2.503 0 0 0 0 3.538 2.503 2.503 0 0 0 3.537 0l8.223-8.23 8.23 8.222a2.503 2.503 0 0 0 3.538 0 2.503 2.503 0 0 0 0-3.537l-8.23-8.223 8.222-8.23Z'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*END HAMBURGER-PANEL*/

@@ -1,0 +1,44 @@
+/*MAIN*/
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 1440px) {
+    .main {
+        gap: 70px;
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .main {
+        gap: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main {
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main {
+        gap: 35px;
+        margin-bottom: 35px;
+    }
+}
+
+/*END MAIN*/

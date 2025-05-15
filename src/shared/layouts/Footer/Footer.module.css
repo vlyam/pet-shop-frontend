@@ -1,0 +1,242 @@
+/*FOOTER*/
+.footer {
+    padding-bottom: 80px;
+}
+
+.footer__container {
+    max-width: 1440px;
+    padding: 0 40px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer__information {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.footer__contact {
+    padding: 32px;
+    background-color: #F1F3F4;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer__contact:nth-child(odd) {
+    width: calc(58.53% - 16px);
+}
+
+.footer__contact:nth-child(even) {
+    width: calc(41.4706% - 16px);
+}
+
+.footer__contact-label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: #8B8B8B;
+}
+
+.footer__contact-value {
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--subtitle-size);
+    line-height: 110%;
+    color: var(--secondary-color);
+}
+
+.footer__contact-value a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 300ms;
+}
+
+.footer__contact-value a:hover {
+    color: var(--main-color);
+}
+
+.footer__social-list {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__social-li {
+    display: block;
+    width: 38px;
+    height: 38px;
+}
+
+.footer__social-image {
+    width: 38px;
+    height: 38px;
+}
+
+.footer__social-button svg {
+    width: 100%;
+    fill: var(--secondary-color);
+    transition: all 300ms;
+}
+
+.footer__social-button:hover svg {
+    fill: var(--main-color);
+    transform: translateY(-3px);
+}
+
+
+.footer__map {
+    height: 350px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+@media (max-width: 1440px) {
+    .footer {
+        padding-bottom: 70px;
+    }
+
+    .footer__container {
+        gap: 35px;
+    }
+
+    .footer__contacts {
+        gap: 30px;
+    }
+
+    .footer__contact:nth-child(odd) {
+        width: calc(58.53% - 15px);
+    }
+
+    .footer__contact:nth-child(even) {
+        width: calc(41.4706% - 15px);
+    }
+
+    .footer__contact-label {
+        font-size: 18px;
+    }
+
+    .footer__contact-value {
+        font-size: var(--subtitle-size-lg);
+    }
+}
+
+@media (max-width: 1280px) {
+    .footer {
+        padding-bottom: 60px;
+    }
+
+    .footer__container {
+        padding: 0 30px;
+        gap: 30px;
+    }
+
+    .footer__contacts {
+        gap: 26px;
+    }
+
+    .footer__contact:nth-child(odd) {
+        width: calc(58.53% - 13px);
+    }
+
+    .footer__contact:nth-child(even) {
+        width: calc(41.4706% - 13px);
+    }
+
+    .footer__contact-label {
+        font-size: 16px;
+    }
+
+    .footer__contact-value {
+        font-size: var(--subtitle-size-md);
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+        padding-bottom: 50px;
+    }
+
+    .footer__container {
+        padding: 0 25px;
+        gap: 25px;
+    }
+
+    .footer__contacts {
+        gap: 20px;
+    }
+
+    .footer__contact:nth-child(odd) {
+        width: calc(58.53% - 10px);
+    }
+
+    .footer__contact:nth-child(even) {
+        width: calc(41.4706% - 10px);
+    }
+
+    .footer__contact-label {
+        font-size: 15px;
+    }
+
+    .footer__contact-value {
+        font-size: var(--subtitle-size-sm);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding-bottom: 40px;
+    }
+
+    .footer__container {
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    .footer__contacts {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .footer__contact,
+    .footer__contact:nth-child(even),
+    .footer__contact:nth-child(odd) {
+        width: 100%;
+    }
+
+    .footer__contact-label {
+        font-size: 14px;
+    }
+
+    .footer__contact-value {
+        font-size: var(--subtitle-size-xs);
+    }
+}
+
+@media (max-width: 400px) {
+    .footer {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer__contact-value {
+        font-size: var(--subtitle-size-mob);
+    }
+
+    .footer__social-list {
+        justify-content: center;
+    }
+}
+
+/*END FOOTER*/
