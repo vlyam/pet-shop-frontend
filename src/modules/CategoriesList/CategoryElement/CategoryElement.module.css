@@ -19,6 +19,7 @@
     width: 100%;
     aspect-ratio: 316/350;
 }
+
 .category__thumbnail::after {
     content: '';
     position: absolute;
@@ -29,11 +30,12 @@
     pointer-events: none;
     z-index: 1;
 }
+
 .category__thumbnail img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     transition: transform 300ms ease, opacity 300ms ease;
     position: relative;
